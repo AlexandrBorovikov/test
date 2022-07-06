@@ -15,7 +15,7 @@ a {
   position: relative;
   max-width: 1920px;
   height: 850px;
-  background-image: url(/assets/Слой\ 9\ 1.jpg);
+  background-image: url(assets/bg-header.jpg);
   background-repeat: no-repeat;
 }
 
@@ -318,7 +318,7 @@ a {
 main {
   max-width: 1920px;
   min-height: 920px;
-  background-image: url(/assets/BG.jpg);
+  background-image: url(assets/bg-main.jpg);
 }
 
 .content {
