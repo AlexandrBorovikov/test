@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+.page-wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,7 +21,13 @@ a {
   max-width: 1920px;
   height: 850px;
   background-image: url(assets/bg-header.jpg);
+  background-size: cover;
+
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 .header {
@@ -29,6 +41,10 @@ a {
   background: rgba(16, 16, 29, 0.9);
   box-sizing: border-box;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    min-height: 60px;
+  }
 
    &__wrap {
     display: flex;
@@ -50,13 +66,10 @@ a {
     width: 246px;
     height: 22px;
 
-    @media (max-width: 768px) {
-      display: block;
-      margin: 0 auto;
-    }
-
     @media (max-width: 400px) {
-      display: none;
+      margin-left: 0px;
+      margin-right: 0px;
+      width: 170px;
     }
    }
 
@@ -105,9 +118,10 @@ a {
   display: flex;
  
   @media (max-width: 768px) {
-    height: 80px;
+    height: 60px;
     padding: 0 30px;
-    align-items: center;
+    align-items: center; 
+    justify-content: space-between;
   }
 }
 
@@ -126,16 +140,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  font-family: 'Roboto', sans-serif;
+  height: 40px;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 16px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  border: 1px solid #0f0d25b0
+  border-bottom: 1px solid rgba(15, 13, 37, 0.6901960784);
 }
 
 .header__item-mobile--first {
@@ -150,8 +164,8 @@ a {
 // бургер
 
 .wrapper-menu {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -171,7 +185,7 @@ a {
   background-color: #fff;
   border-radius: 5px;
   width: 100%;
-  height: 6px;
+  height: 5px;
 }
 
 .line-menu.half {
@@ -210,13 +224,12 @@ a {
   padding-bottom: 40px;
 
   @media (max-width: 768px) {
-    padding-top: 253px;
+    padding-top: 110px;
   }
 }
 
 .info {
   margin: 0 30px;
-  
 
   &__title {
     max-width: 720px;
@@ -227,11 +240,12 @@ a {
     line-height: 58px;
     text-transform: uppercase;
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 
     @media (max-width: 768px) {
       font-size: 32px;
       line-height: 38px;
+      margin-bottom: 40px;
     }
 
     span {
@@ -259,13 +273,14 @@ a {
 
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
 
     @media (max-width: 500px) {
       font-size: 18px;
+      margin-bottom: 40px;
     }
 
     li {
@@ -344,6 +359,10 @@ main {
   margin: 0 auto;
   padding-top: 120px;
 
+  @media (max-width: 820px) {
+    padding-top: 60px;
+   }
+
   &__title {
     text-align: center;
     font-family: 'Roboto';
@@ -394,7 +413,6 @@ main {
       }
 
       @media (max-width: 820px) {
-        // display: block;
         width: auto;
         margin: 20px auto;
       }
@@ -460,13 +478,17 @@ main {
   height: 48px;
 
   @media (max-width: 768px) {
-    max-width: 80%;
-    width: 80%;
+    max-width: 90%;
+    width: 90%;
     margin: 20px auto;
   }
 
   &[data-state="active"] {
     .__select__title {
+      color: #FFFFFF;
+      background: rgba(61, 64, 80, 0.85);
+      border: none;
+
       &::before {
         transform: translate(-3px, -50%) rotate(-45deg);
       }
@@ -497,9 +519,11 @@ main {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #FFFFFF;
-  background: rgba(61, 64, 80, 0.85);
-  border-radius: 3px 3px 0px 0px;
+  color: #272733;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  box-sizing: border-box;
   
   cursor: pointer;
 
@@ -509,7 +533,7 @@ main {
     position: absolute;
     top: 50%;
     right: 10px;
-    background-color: #FFFFFF;
+    background-color: #272733;
 
     display: block;
     width: 10px;
@@ -523,7 +547,7 @@ main {
   }
 
   &:hover {
-    border-color: #D8093A;
+    
 
     &::before,
     &::after {
@@ -561,7 +585,7 @@ main {
 .__select__label {
   display: flex;
   align-items: center;
-  width: 95%;
+  width: 100%;
   height: 40px;
   max-height: 0;
   padding-left: 10px;
@@ -605,8 +629,8 @@ main {
 
   @media (max-width: 768px) {
     display: block;
-    width: 80%;
-    max-width: 80%;
+    width: 90%;
+    max-width: 90%;
     margin: 20px auto;
   }
 }
@@ -621,8 +645,8 @@ main {
 
   @media (max-width: 768px) {
     display: block;
-    max-width: 80%;
-    width: 80%;
+    max-width: 90%;
+    width: 90%;
     margin: 30px auto;
   }
 }
