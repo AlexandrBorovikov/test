@@ -360,6 +360,7 @@ main {
   max-width: 1920px;
   min-height: 920px;
   background-image: url(assets/bg-main.jpg);
+  background-position: center;
 }
 
 .content {
@@ -602,9 +603,6 @@ main {
 
 .__select__content {
   position: absolute;
-  top: 40px;
-  left: 3px;
-
   display: flex;
   flex-direction: column;
   width: 100%;
