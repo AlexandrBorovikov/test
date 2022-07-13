@@ -39,7 +39,7 @@
 
       <div class="container-info">
         <div class="info">
-          <h2 class="info__title"><span>Lorem ipsum</span> dolor sit amet
+          <h2 class="info__title animation-text"><span>Lorem ipsum</span> dolor sit amet
             consectetur <span>adipiscing</span></h2>
           <p class="info__text">At vero eos et accusamus et iusto odio dignissimos ducimus!</p>
           <ul class="info__list">
@@ -47,8 +47,8 @@
             <li>Sit voluptatem accusantium doloremque laudantium</li>
             <li>Sed ut perspiciatis, unde omnis iste natus error</li>
           </ul>
-          <button class="btn btn__order">заказать</button>
-          <button class="btn btn__more">подробнее</button>
+          <button class="btn btn__order jump-button">заказать</button>
+          <button class="btn btn__more jump-button">подробнее</button>
         </div>
       </div>
     </header>
@@ -57,31 +57,37 @@
       <div class="content">
         <h2 class="content__title">Оформление <span>Заказа</span></h2>
         <p class="content__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-        <div class="icons">
-          <div class="icons__item">
-            <img src="assets/group1.png" alt="" >
-            <img class="dots" src="assets/dots.svg" alt="">
-            <p>Lorem ipsum dolor sit amet</p>
-          </div>
-          <div class="icons__item">
-            <img src="assets/group2.png" alt="" >
-            <img class="dots" src="assets/dots.svg" alt="">
-            <p>Сonsecteturadipiscing elit</p>
-          </div>
-          <div class="icons__item">
-            <img src="assets/group3.png" alt="" >
-            <img class="dots" src="assets/dots.svg" alt="">
-            <p>Sed do eiusmod tempor</p>
-          </div>
-          <div class="icons__item">
-            <img src="assets/group4.png" alt="" >
-            <img class="dots" src="assets/dots.svg" alt="">
-            <p>Esse cillum dolore eu fugiat</p>
-          </div>
-          <div class="icons__item">
-            <img src="assets/group5.png" alt="" >
-            <p>Excepteur sint occaecat cupidatat non proident</p>
-          </div>
+        <div class="scheme">
+        <div class="scheme__item-wrap">
+            <div class="scheme__item">
+                <img src="assets/search.svg" alt="#" class="scheme__icon">
+            </div>
+            <span class="scheme__text">Lorem ipsum dolor sit amet</span>
+        </div>
+        <div class="scheme__item-wrap">
+            <div class="scheme__item">
+                <img src="assets/percent.svg" alt="#" class="scheme__icon">
+            </div>
+            <span class="scheme__text">Сonsecteturadipiscing elit</span>
+        </div>
+        <div class="scheme__item-wrap">
+            <div class="scheme__item">
+                <img src="assets/add-file.svg" alt="#" class="scheme__icon">
+            </div>
+            <span class="scheme__text">Sed do eiusmod tempor</span>
+        </div>
+        <div class="scheme__item-wrap">
+            <div class="scheme__item">
+                <img src="assets/mail.svg" alt="#" class="scheme__icon">
+            </div>
+            <span class="scheme__text">Esse cillum dolore eu fugiat</span>
+        </div>
+        <div class="scheme__item-wrap ">
+            <div class="scheme__item">
+                <img src="assets/money.svg" alt="#" class="scheme__icon">
+            </div> 
+            <span class="scheme__text scheme__text--last">Excepteur sint occaecat cupidatat non proident</span>
+        </div>
         </div>
 
         <form class="form" action="#" method="get">
@@ -125,7 +131,7 @@
             </div>
           </div>
 
-          <button class="btn btn__submit" type="submit">Отправить</button>
+          <button class="btn btn__submit jump-button" type="submit">Отправить</button>
         </form>
       </div>
     </main>
